@@ -104,3 +104,69 @@ body {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 20px 24px 0;
+}
+
+.app-brand {
+  color: var(--app-text);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.app-nav-links {
+  display: flex;
+  gap: 8px;
+}
+
+.app-nav-links a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: var(--app-muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.app-nav-links a:hover {
+  background: #eef2ff;
+  color: var(--app-primary);
+}
+
+.app-nav-links a.active {
+  background: var(--app-primary);
+  color: #fff;
+}
+
+.page--wide {
+  width: min(1200px, 100%);
+}
+
+.table-card {
+  padding: 16px;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}
+
+.list-error {
+  margin-bottom: 16px;
+}
+
+.form-error {
+  margin-bottom: 18px;
+}

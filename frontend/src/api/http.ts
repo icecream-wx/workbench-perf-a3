@@ -35,3 +35,11 @@ export async function request<T>(config: AxiosRequestConfig): Promise<T> {
 export function get<T>(url: string, config?: AxiosRequestConfig): Promise<T> {
   return request<T>({ ...config, method: 'GET', url });
 }
+
+export function post<T>(url: string, data?: unknown, config?: AxiosRequestConfig): Promise<T> {
+  return request<T>({ ...config, method: 'POST', url, data });
+}
+
+export function put<T>(url: string, data?: unknown, config?: AxiosRequestConfig): Promise<T> {
+  return request<T>({ ...config, method: 'PUT', url, data });
+}
